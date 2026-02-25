@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cell Core</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+      overflow: hidden;
+    }
+    canvas {
+      display: block;
+    }
+     #startOverlay {
+      position: fixed;
+      inset: 0;
+      background: black;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      font-family: sans-serif;
+      cursor: pointer;
+      z-index: 100;
+     }
+  </style>
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+
+  <div id="startOverlay">
+    TAP TO START
+  </div>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
